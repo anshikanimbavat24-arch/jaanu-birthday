@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Dhanush ❤️</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  max-width: 80%;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hidden { display: none; }
+</style>
+</head>
+
+<body>
+
+<section id="start">
+  <h2>Dhanush… ❤️</h2>
+  <p>This is for you</p>
+  <button onclick="next()">Enter</button>
+</section>
+
+<section class="hidden">
+  <h1>you feel like home.</h1>
+  <img src="YOUR_IMAGE_1">
+</section>
+
+<section class="hidden">
+  <p>we started simple…</p>
+  <img src="YOUR_IMAGE_2">
+</section>
+
+<section class="hidden">
+  <p>then became this chaos 😭❤️</p>
+  <img src="YOUR_IMAGE_3">
+</section>
+
+<section class="hidden">
+  <p>you became mine.</p>
+  <img src="YOUR_IMAGE_4">
+</section>
+
+<section class="hidden">
+  <h1>you are my home, dhanush ❤️</h1>
+</section>
+
+<section class="hidden">
+  <p>
+  Hey jaanu ❤️<br><br>
+  You’re my comfort, my safe place, my home.<br>
+  Happy Birthday ❤️
+  </p>
+</section>
+
+<section class="hidden">
+  <h2>Do you love me?</h2>
+  <button onclick="alert('I knew it ❤️')">YES</button>
+  <button onclick="alert('I knew it 😏')">ALSO YES</button>
+</section>
+
+<script>
+let current = 0;
+const sections = document.querySelectorAll("section");
+
+function next() {
+  sections[current].classList.add("hidden");
+  current++;
+  if (sections[current]) {
+    sections[current].classList.remove("hidden");
+  }
+}
+</script>
+
+</body>
+</html>
